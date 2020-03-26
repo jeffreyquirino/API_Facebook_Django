@@ -1,0 +1,18 @@
+{% load socialaccount %}
+{% providers_media_js %}
+
+<html lang="pt-br">
+  <head>
+    <title>Seja Bem Vindo {{user}}</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+  
+    <h1>Você está logado como {{user}} </h1>
+
+    <img src="{{ user.socialaccount_set.all.0.get_avatar_url }}"
+     alt="Imagem de perfil" width="200" height="200" />
+    
+  </body>
+</html>

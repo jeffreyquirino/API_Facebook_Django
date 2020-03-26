@@ -1,0 +1,16 @@
+{% load socialaccount %}
+{% providers_media_js %}
+
+<html lang="pt-br">
+  <head>
+    <title>Login Com Facebook</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    
+    <h1>Para logar clique no botão abaixo</h1>
+    
+    <button><a href="{% provider_login_url "facebook" method="js_sdk" %}">Facebook Login</a></button>
+
+  </body>
+</html> 
